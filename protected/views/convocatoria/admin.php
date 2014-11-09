@@ -44,8 +44,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'id'=>'convocatoria-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
-	'columns'=>array(
-		'convocatoria_programa',
+	'columns'=>array
+		'convocatoria',
 		'tipo_convocatoria',
 		'subtipo_convocatoria',
 		'fecha_apertura',
@@ -54,7 +54,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'tipo_financiacion',
 		'fecha_resultado_preliminar',
 		'fecha_resultado_definitivo',
-		'convocatoria',
+		'convocatoria_programa',
 		'codigo_convocatoria',
 		'descripcion',
 		'objeto',
