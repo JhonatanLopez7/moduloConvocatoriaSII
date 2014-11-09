@@ -27,7 +27,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'tipo_convocatoria'); ?>
-		<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 1=>'Proyectos', 2=>'Servicios', 3=>'Formacion', 4=>'Apropiacion Social', 5=>'Regalias')); ?>
+		<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 'Proyectos'=>'Proyectos', 'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias')); ?>
 		<?php echo $form->error($model,'tipo_convocatoria'); ?>
 	</div>
 
