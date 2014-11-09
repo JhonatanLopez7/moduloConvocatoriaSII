@@ -15,7 +15,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">En este espacio diligencie los campos requeridos. Los datos marcados con <span class="required">*</span> son obligatorios, cuando termine de click en aceptar.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -352,7 +352,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Aceptar' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
