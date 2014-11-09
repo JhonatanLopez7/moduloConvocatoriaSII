@@ -74,7 +74,7 @@
 			'attribute'=>'fecha_apertura',
 			'value'=>$model->fecha_apertura,
 			'language' => 'es',
-			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px;  border-style: dotted; border-color: rgb(211,211,211);'),
+			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
 			'options'=>array(
 			'autoSize'=>true,
 			'defaultDate'=>$model->fecha_apertura,
@@ -109,7 +109,7 @@
 			'attribute'=>'fecha_cierre',
 			'value'=>$model->fecha_cierre,
 			'language' => 'es',
-			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px;  border-style: dotted; border-color: rgb(211,211,211);'),
+			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
 			'options'=>array(
 			'autoSize'=>true,
 			'defaultDate'=>$model->fecha_cierre,
