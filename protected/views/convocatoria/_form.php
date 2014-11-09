@@ -323,7 +323,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'linea_investigacion'); ?>
-		<?php echo $form->textField($model,'linea_investigacion',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'linea_investigacion',array('empty'=>'Seleccione', 'Gran Linea'=>'Gran Linea', 'Linea'=>'Linea', 'Disciplina'=>'Disciplina')); ?>
 		<?php echo $form->error($model,'linea_investigacion'); ?>
 	</div>
 
