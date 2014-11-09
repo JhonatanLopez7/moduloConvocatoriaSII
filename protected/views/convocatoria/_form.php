@@ -329,7 +329,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'postulacion_anticipada'); ?>
-		<?php echo $form->textField($model,'postulacion_anticipada',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->DropDownList($model,'postulacion_anticipada',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
 		<?php echo $form->error($model,'postulacion_anticipada'); ?>
 	</div>
 
