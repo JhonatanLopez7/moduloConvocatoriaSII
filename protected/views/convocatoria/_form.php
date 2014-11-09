@@ -50,7 +50,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'convocatoria_programa'); ?>
-		<?php echo $form->textField($model,'convocatoria_programa',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->DropDownList($model,'convocatoria_programa',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
 		<?php echo $form->error($model,'convocatoria_programa'); ?>
 	</div>
 
