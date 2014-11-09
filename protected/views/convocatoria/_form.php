@@ -26,39 +26,69 @@
 	</div>-->
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'tipo_convocatoria'); ?>
-		<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 'Proyectos'=>'Proyectos', 
-		'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias')); ?>
-		<?php echo $form->error($model,'tipo_convocatoria'); ?>
-	</div>
+		<div class="col-lg-3">
+			<?php echo $form->labelEx($model,'tipo_convocatoria'); ?>
+			<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 'Proyectos'=>'Proyectos', 
+			'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias')); ?>
+			<?php echo $form->error($model,'tipo_convocatoria'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'subtipo_convocatoria'); ?>
+			<?php echo $form->DropDownList($model,'subtipo_convocatoria',array('empty'=>'Seleccione', 'Investigacion'=>'Investigacion', 
+			'I+D'=>'I+D', 'Inovcacion'=>'Inovcacion', 'Emprendimiento'=>'Emprendimiento', 'Beneficios tributarios-Renta exenta por nuevo software'
+			=>'Beneficios tributarios-Renta exenta por nuevo software','Beneficios tributarios-Deduccion por inversion o donacion'
+			=>'Beneficios tributarios-Deduccion por inversion o donacion','Beneficios tributarios-Exencion de IVA por importacion de equipos'
+			=>'Beneficios tributarios-Exencion de IVA por importacion de equipos','Reconocimiento y medicion de grupos'=>'Reconocimiento y medicion de grupos',
+			'Reconocimiento de pares'=>'Reconocimiento de pares','Reconocimiento de centros'=>'Reconocimiento de centros','Reconocimiento de editoriales'=>'Reconocimiento de editoriales',
+			'Indexacion y homologacion de revistas'=>'Indexacion y homologacion de revistas','Ondas'=>'Ondas', 'Jovenes Investigadores'=>'Jovenes Investigadores',
+			'Jovenes Ingenieros'=>'Jovenes Ingenieros', 'Semillero Investigacion'=>'Semillero Investigacion', 'Maestria'=>'Maestria','Doctorado Nacional'=>'Doctorado Nacional', 
+			'Doctorado internacional'=>'Doctorado internacional','Insercion laboral'=>'Insercion laboral','PostDoctorados'=>'PostDoctorados',
+			'Pasantias'=>'Pasantias','Ideas para el cambio'=>'Ideas para el cambio', 'A ciencia cierta'=>'A ciencia cierta', 'Anexos'=>'Anexos',
+			'Eventos'=>'Eventos','Semana Nacional C+T'=>'Semana Nacional C+T')); ?>
+			<?php echo $form->error($model,'subtipo_convocatoria'); ?>
+		</div>
+	</div>	
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'subtipo_convocatoria'); ?>
-		<?php echo $form->DropDownList($model,'subtipo_convocatoria',array('empty'=>'Seleccione', 'Investigacion'=>'Investigacion', 
-		'I+D'=>'I+D', 'Inovcacion'=>'Inovcacion', 'Emprendimiento'=>'Emprendimiento', 'Beneficios tributarios-Renta exenta por nuevo software'
-		=>'Beneficios tributarios-Renta exenta por nuevo software','Beneficios tributarios-Deduccion por inversion o donacion'
-		=>'Beneficios tributarios-Deduccion por inversion o donacion','Beneficios tributarios-Exencion de IVA por importacion de equipos'
-		=>'Beneficios tributarios-Exencion de IVA por importacion de equipos','Reconocimiento y medicion de grupos'=>'Reconocimiento y medicion de grupos',
-		'Reconocimiento de pares'=>'Reconocimiento de pares','Reconocimiento de centros'=>'Reconocimiento de centros','Reconocimiento de editoriales'=>'Reconocimiento de editoriales',
-		'Indexacion y homologacion de revistas'=>'Indexacion y homologacion de revistas','Ondas'=>'Ondas', 'Jovenes Investigadores'=>'Jovenes Investigadores',
-		'Jovenes Ingenieros'=>'Jovenes Ingenieros', 'Semillero Investigacion'=>'Semillero Investigacion', 'Maestria'=>'Maestria','Doctorado Nacional'=>'Doctorado Nacional', 
-		'Doctorado internacional'=>'Doctorado internacional','Insercion laboral'=>'Insercion laboral','PostDoctorados'=>'PostDoctorados',
-		'Pasantias'=>'Pasantias','Ideas para el cambio'=>'Ideas para el cambio', 'A ciencia cierta'=>'A ciencia cierta', 'Anexos'=>'Anexos',
-		'Eventos'=>'Eventos','Semana Nacional C+T'=>'Semana Nacional C+T')); ?>
-		<?php echo $form->error($model,'subtipo_convocatoria'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'convocatoria_programa'); ?>
-		<?php echo $form->DropDownList($model,'convocatoria_programa',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
-		<?php echo $form->error($model,'convocatoria_programa'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'tipo_financiacion'); ?>
-		<?php echo $form->DropDownList($model,'tipo_financiacion',array('empty'=>'Seleccione','Cofinancion'=>'Cofinancion',
-		'Recuperacion contingente'=>'Recuperacion contingente','Credito condonable'=>'Credito condonable', 'Beca pasantia'=>'Beca pasantia')); ?>
-		<?php echo $form->error($model,'tipo_financiacion'); ?>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'convocatoria_programa'); ?>
+			<?php echo $form->DropDownList($model,'convocatoria_programa',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
+			<?php echo $form->error($model,'convocatoria_programa'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'tipo_financiacion'); ?>
+			<?php echo $form->DropDownList($model,'tipo_financiacion',array('empty'=>'Seleccione','Cofinancion'=>'Cofinancion',
+			'Recuperacion contingente'=>'Recuperacion contingente','Credito condonable'=>'Credito condonable', 'Beca pasantia'=>'Beca pasantia')); ?>
+			<?php echo $form->error($model,'tipo_financiacion'); ?>
+		</div>
+		<div class="col-lg-4 fecha">
+				<?php echo $form->labelEx($model,'fecha_apertura'); ?>
+				<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				'model'=>$model,
+				'attribute'=>'fecha_apertura',
+				'value'=>$model->fecha_apertura,
+				'language' => 'es',
+				'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
+				'options'=>array(
+				'autoSize'=>true,
+				'defaultDate'=>$model->fecha_apertura,
+				'dateFormat'=>'yy-mm-dd',
+				'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
+				'buttonImageOnly'=>true,
+				'buttonText'=>'Fecha',
+				'selectOtherMonths'=>true,
+				'showAnim'=>'slide',
+				'showButtonPanel'=>true,
+				'showOn'=>'button', 
+				'showOtherMonths'=>true, 
+				'changeMonth' => 'true', 
+				'changeYear' => 'true', 
+				'minDate'=>'1900-01-01', 
+				'maxDate'=> '0',
+				),
+				));?>
+				<?php echo $form->error($model,'fecha_apertura'); ?>
+		</div>
 	</div>
 
 	<!--<div class="row">
@@ -68,32 +98,7 @@
 	</div>-->
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'fecha_apertura'); ?>
-		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-			'model'=>$model,
-			'attribute'=>'fecha_apertura',
-			'value'=>$model->fecha_apertura,
-			'language' => 'es',
-			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
-			'options'=>array(
-			'autoSize'=>true,
-			'defaultDate'=>$model->fecha_apertura,
-			'dateFormat'=>'yy-mm-dd',
-			'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
-			'buttonImageOnly'=>true,
-			'buttonText'=>'Fecha',
-			'selectOtherMonths'=>true,
-			'showAnim'=>'slide',
-			'showButtonPanel'=>true,
-			'showOn'=>'button', 
-			'showOtherMonths'=>true, 
-			'changeMonth' => 'true', 
-			'changeYear' => 'true', 
-			'minDate'=>'1900-01-01', 
-			'maxDate'=> '0',
-			),
-		));?>
-		<?php echo $form->error($model,'fecha_apertura'); ?>
+		
 	</div>
 
 	<!--<div class="row">

@@ -163,3 +163,6 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	clear: left;
 	padding-left: 110px;
 }
+.fecha{
+	display-border: inline-block;
+}
