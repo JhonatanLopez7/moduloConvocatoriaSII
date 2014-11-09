@@ -201,6 +201,8 @@ div.search-form
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	margin: -17px;
+	margin-top: 41px;
 }
 
 .operations li
