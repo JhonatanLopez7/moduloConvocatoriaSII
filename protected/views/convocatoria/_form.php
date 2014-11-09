@@ -56,7 +56,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'tipo_financiacion'); ?>
-		<?php echo $form->textField($model,'tipo_financiacion',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->DropDownList($model,'tipo_financiacion',array('empty'=>'Seleccione','Cofinancion'=>'Cofinancion',
+		'Recuperacion contingente'=>'Recuperacion contingente','Credito condonable'=>'Credito condonable', 'Beca pasantia'=>'Beca pasantia')); ?>
 		<?php echo $form->error($model,'tipo_financiacion'); ?>
 	</div>
 
