@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Convocatorias'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Convocatoria', 'url'=>array('index')),
-	array('label'=>'Manage Convocatoria', 'url'=>array('admin')),
+	/*array('label'=>'Listar Convocatoria', 'url'=>array('index')),*/
+	array('label'=>'Administrar Convocatorias', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Convocatoria</h1>
+<h1>Crear Convocatorias</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
