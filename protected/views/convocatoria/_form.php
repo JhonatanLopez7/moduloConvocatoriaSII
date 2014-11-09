@@ -138,6 +138,41 @@
 	</div>-->
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'fecha_resultado_preliminar'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fecha_resultado_preliminar',
+			'value'=>$model->fecha_resultado_preliminar,
+			'language' => 'es',
+			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
+			'options'=>array(
+			'autoSize'=>true,
+			'defaultDate'=>$model->fecha_resultado_preliminar,
+			'dateFormat'=>'yy-mm-dd',
+			'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
+			'buttonImageOnly'=>true,
+			'buttonText'=>'Fecha',
+			'selectOtherMonths'=>true,
+			'showAnim'=>'slide',
+			'showButtonPanel'=>true,
+			'showOn'=>'button', 
+			'showOtherMonths'=>true, 
+			'changeMonth' => 'true', 
+			'changeYear' => 'true', 
+			'minDate'=>'1900-01-01', 
+			'maxDate'=> '0',
+			),
+		));?>
+		<?php echo $form->error($model,'fecha_resultado_preliminar'); ?>
+	</div>
+
+	<!--<div class="row">
+		<?php echo $form->labelEx($model,'fecha_resultado_definitivo'); ?>
+		<?php echo $form->textField($model,'fecha_resultado_definitivo'); ?>
+		<?php echo $form->error($model,'fecha_resultado_definitivo'); ?>
+	</div>-->
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'fecha_resultado_definitivo'); ?>
 		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
 			'model'=>$model,
@@ -163,12 +198,6 @@
 			'maxDate'=> '0',
 			),
 		));?>
-		<?php echo $form->error($model,'fecha_resultado_definitivo'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'fecha_resultado_definitivo'); ?>
-		<?php echo $form->textField($model,'fecha_resultado_definitivo'); ?>
 		<?php echo $form->error($model,'fecha_resultado_definitivo'); ?>
 	</div>
 
