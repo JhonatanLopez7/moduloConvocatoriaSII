@@ -45,13 +45,13 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
+		'convocatoria_programa',
 		'tipo_convocatoria',
 		'subtipo_convocatoria',
-		'convocatoria_programa',
-		'tipo_financiacion',
 		'fecha_apertura',
 		'fecha_cierre',
 		/*
+		'tipo_financiacion',
 		'fecha_resultado_preliminar',
 		'fecha_resultado_definitivo',
 		'convocatoria',
