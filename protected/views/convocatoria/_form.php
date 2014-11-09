@@ -61,7 +61,7 @@
 			'Recuperacion contingente'=>'Recuperacion contingente','Credito condonable'=>'Credito condonable', 'Beca pasantia'=>'Beca pasantia')); ?>
 			<?php echo $form->error($model,'tipo_financiacion'); ?>
 		</div>
-		<div class="col-lg-4 fecha">
+		<div class="col-lg-4">
 				<?php echo $form->labelEx($model,'fecha_apertura'); ?>
 				<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
 				'model'=>$model,
@@ -98,7 +98,90 @@
 	</div>-->
 
 	<div class="row">
-		
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'fecha_cierre'); ?>
+			<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				'model'=>$model,
+				'attribute'=>'fecha_cierre',
+				'value'=>$model->fecha_cierre,
+				'language' => 'es',
+				'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
+				'options'=>array(
+				'autoSize'=>true,
+				'defaultDate'=>$model->fecha_cierre,
+				'dateFormat'=>'yy-mm-dd',
+				'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
+				'buttonImageOnly'=>true,
+				'buttonText'=>'Fecha',
+				'selectOtherMonths'=>true,
+				'showAnim'=>'slide',
+				'showButtonPanel'=>true,
+				'showOn'=>'button', 
+				'showOtherMonths'=>true, 
+				'changeMonth' => 'true', 
+				'changeYear' => 'true', 
+				'minDate'=>'1900-01-01', 
+				'maxDate'=> '0',
+				),
+			));?>
+			<?php echo $form->error($model,'fecha_cierre'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'fecha_resultado_preliminar'); ?>
+			<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				'model'=>$model,
+				'attribute'=>'fecha_resultado_preliminar',
+				'value'=>$model->fecha_resultado_preliminar,
+				'language' => 'es',
+				'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
+				'options'=>array(
+				'autoSize'=>true,
+				'defaultDate'=>$model->fecha_resultado_preliminar,
+				'dateFormat'=>'yy-mm-dd',
+				'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
+				'buttonImageOnly'=>true,
+				'buttonText'=>'Fecha',
+				'selectOtherMonths'=>true,
+				'showAnim'=>'slide',
+				'showButtonPanel'=>true,
+				'showOn'=>'button', 
+				'showOtherMonths'=>true, 
+				'changeMonth' => 'true', 
+				'changeYear' => 'true', 
+				'minDate'=>'1900-01-01', 
+				'maxDate'=> '0',
+				),
+			));?>
+			<?php echo $form->error($model,'fecha_resultado_preliminar'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'fecha_resultado_definitivo'); ?>
+			<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				'model'=>$model,
+				'attribute'=>'fecha_resultado_definitivo',
+				'value'=>$model->fecha_resultado_definitivo,
+				'language' => 'es',
+				'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
+				'options'=>array(
+				'autoSize'=>true,
+				'defaultDate'=>$model->fecha_resultado_definitivo,
+				'dateFormat'=>'yy-mm-dd',
+				'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
+				'buttonImageOnly'=>true,
+				'buttonText'=>'Fecha',
+				'selectOtherMonths'=>true,
+				'showAnim'=>'slide',
+				'showButtonPanel'=>true,
+				'showOn'=>'button', 
+				'showOtherMonths'=>true, 
+				'changeMonth' => 'true', 
+				'changeYear' => 'true', 
+				'minDate'=>'1900-01-01', 
+				'maxDate'=> '0',
+				),
+			));?>
+			<?php echo $form->error($model,'fecha_resultado_definitivo'); ?>
+		</div>
 	</div>
 
 	<!--<div class="row">
@@ -107,69 +190,11 @@
 		<?php echo $form->error($model,'fecha_cierre'); ?>
 	</div>-->
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'fecha_cierre'); ?>
-		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-			'model'=>$model,
-			'attribute'=>'fecha_cierre',
-			'value'=>$model->fecha_cierre,
-			'language' => 'es',
-			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
-			'options'=>array(
-			'autoSize'=>true,
-			'defaultDate'=>$model->fecha_cierre,
-			'dateFormat'=>'yy-mm-dd',
-			'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
-			'buttonImageOnly'=>true,
-			'buttonText'=>'Fecha',
-			'selectOtherMonths'=>true,
-			'showAnim'=>'slide',
-			'showButtonPanel'=>true,
-			'showOn'=>'button', 
-			'showOtherMonths'=>true, 
-			'changeMonth' => 'true', 
-			'changeYear' => 'true', 
-			'minDate'=>'1900-01-01', 
-			'maxDate'=> '0',
-			),
-		));?>
-		<?php echo $form->error($model,'fecha_cierre'); ?>
-	</div>
-
 	<!--<div class="row">
 		<?php echo $form->labelEx($model,'fecha_resultado_preliminar'); ?>
 		<?php echo $form->textField($model,'fecha_resultado_preliminar'); ?>
 		<?php echo $form->error($model,'fecha_resultado_preliminar'); ?>
 	</div>-->
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'fecha_resultado_preliminar'); ?>
-		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-			'model'=>$model,
-			'attribute'=>'fecha_resultado_preliminar',
-			'value'=>$model->fecha_resultado_preliminar,
-			'language' => 'es',
-			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
-			'options'=>array(
-			'autoSize'=>true,
-			'defaultDate'=>$model->fecha_resultado_preliminar,
-			'dateFormat'=>'yy-mm-dd',
-			'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
-			'buttonImageOnly'=>true,
-			'buttonText'=>'Fecha',
-			'selectOtherMonths'=>true,
-			'showAnim'=>'slide',
-			'showButtonPanel'=>true,
-			'showOn'=>'button', 
-			'showOtherMonths'=>true, 
-			'changeMonth' => 'true', 
-			'changeYear' => 'true', 
-			'minDate'=>'1900-01-01', 
-			'maxDate'=> '0',
-			),
-		));?>
-		<?php echo $form->error($model,'fecha_resultado_preliminar'); ?>
-	</div>
 
 	<!--<div class="row">
 		<?php echo $form->labelEx($model,'fecha_resultado_definitivo'); ?>
@@ -178,186 +203,244 @@
 	</div>-->
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'fecha_resultado_definitivo'); ?>
-		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-			'model'=>$model,
-			'attribute'=>'fecha_resultado_definitivo',
-			'value'=>$model->fecha_resultado_definitivo,
-			'language' => 'es',
-			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
-			'options'=>array(
-			'autoSize'=>true,
-			'defaultDate'=>$model->fecha_resultado_definitivo,
-			'dateFormat'=>'yy-mm-dd',
-			'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
-			'buttonImageOnly'=>true,
-			'buttonText'=>'Fecha',
-			'selectOtherMonths'=>true,
-			'showAnim'=>'slide',
-			'showButtonPanel'=>true,
-			'showOn'=>'button', 
-			'showOtherMonths'=>true, 
-			'changeMonth' => 'true', 
-			'changeYear' => 'true', 
-			'minDate'=>'1900-01-01', 
-			'maxDate'=> '0',
-			),
-		));?>
-		<?php echo $form->error($model,'fecha_resultado_definitivo'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'convocatoria'); ?>
+			<?php echo $form->textField($model,'convocatoria',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'convocatoria'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'codigo_convocatoria'); ?>
+			<?php echo $form->textField($model,'codigo_convocatoria'); ?>
+			<?php echo $form->error($model,'codigo_convocatoria'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'convocatoria'); ?>
-		<?php echo $form->textField($model,'convocatoria',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'convocatoria'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'descripcion'); ?>
+			<?php echo $form->textField($model,'descripcion',array('size'=>60,'maxlength'=>250)); ?>
+			<?php echo $form->error($model,'descripcion'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'codigo_convocatoria'); ?>
-		<?php echo $form->textField($model,'codigo_convocatoria'); ?>
-		<?php echo $form->error($model,'codigo_convocatoria'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'objeto'); ?>
+			<?php echo $form->textField($model,'objeto',array('size'=>60,'maxlength'=>150)); ?>
+			<?php echo $form->error($model,'objeto'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'descripcion'); ?>
-		<?php echo $form->textField($model,'descripcion',array('size'=>60,'maxlength'=>250)); ?>
-		<?php echo $form->error($model,'descripcion'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'dirigido_a'); ?>
+			<?php echo $form->textField($model,'dirigido_a',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'dirigido_a'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'objeto'); ?>
-		<?php echo $form->textField($model,'objeto',array('size'=>60,'maxlength'=>150)); ?>
-		<?php echo $form->error($model,'objeto'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'programa_base'); ?>
+			<?php echo $form->textField($model,'programa_base',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'programa_base'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'dirigido_a'); ?>
-		<?php echo $form->textField($model,'dirigido_a',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'dirigido_a'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'instituciones_financiadoras'); ?>
+			<?php echo $form->textField($model,'instituciones_financiadoras',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'instituciones_financiadoras'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'programa_base'); ?>
-		<?php echo $form->textField($model,'programa_base',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'programa_base'); ?>
+		<div class="col-lg-6">
+			<?php echo $form->labelEx($model,'maximo_porcentaje_financiar'); ?>
+			<?php echo $form->textField($model,'maximo_porcentaje_financiar'); ?>
+			<?php echo $form->error($model,'maximo_porcentaje_financiar'); ?>
+		</div>	
+		<div class="col-lg-6">
+			<?php echo $form->labelEx($model,'minimo_porcentaje_financiar'); ?>
+			<?php echo $form->textField($model,'minimo_porcentaje_financiar'); ?>
+			<?php echo $form->error($model,'minimo_porcentaje_financiar'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'instituciones_financiadoras'); ?>
-		<?php echo $form->textField($model,'instituciones_financiadoras',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'instituciones_financiadoras'); ?>
+		<div class="col-lg-6">
+			<?php echo $form->labelEx($model,'minimo_porcentaje_contrapartida_dinero'); ?>
+			<?php echo $form->textField($model,'minimo_porcentaje_contrapartida_dinero'); ?>
+			<?php echo $form->error($model,'minimo_porcentaje_contrapartida_dinero'); ?>
+		</div>	
+		<div class="col-lg-6">
+			<?php echo $form->labelEx($model,'minimo_porcentaje_contrapartida_especie'); ?>
+			<?php echo $form->textField($model,'minimo_porcentaje_contrapartida_especie'); ?>
+			<?php echo $form->error($model,'minimo_porcentaje_contrapartida_especie'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'maximo_porcentaje_financiar'); ?>
-		<?php echo $form->textField($model,'maximo_porcentaje_financiar'); ?>
-		<?php echo $form->error($model,'maximo_porcentaje_financiar'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'minimo_porcentaje_financiar'); ?>
-		<?php echo $form->textField($model,'minimo_porcentaje_financiar'); ?>
-		<?php echo $form->error($model,'minimo_porcentaje_financiar'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'minimo_porcentaje_contrapartida_dinero'); ?>
-		<?php echo $form->textField($model,'minimo_porcentaje_contrapartida_dinero'); ?>
-		<?php echo $form->error($model,'minimo_porcentaje_contrapartida_dinero'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'minimo_porcentaje_contrapartida_especie'); ?>
-		<?php echo $form->textField($model,'minimo_porcentaje_contrapartida_especie'); ?>
-		<?php echo $form->error($model,'minimo_porcentaje_contrapartida_especie'); ?>
-	</div>
-
-	<div class="row">
+		<div class="col-lg-4">
 		<?php echo $form->labelEx($model,'monto_maximo_financiar'); ?>
 		<?php echo $form->textField($model,'monto_maximo_financiar'); ?>
 		<?php echo $form->error($model,'monto_maximo_financiar'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'numero_maximo_meses_proyecto'); ?>
+			<?php echo $form->textField($model,'numero_maximo_meses_proyecto'); ?>
+			<?php echo $form->error($model,'numero_maximo_meses_proyecto'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'monto_total_convocatoria'); ?>
+			<?php echo $form->textField($model,'monto_total_convocatoria'); ?>
+			<?php echo $form->error($model,'monto_total_convocatoria'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'numero_maximo_meses_proyecto'); ?>
-		<?php echo $form->textField($model,'numero_maximo_meses_proyecto'); ?>
-		<?php echo $form->error($model,'numero_maximo_meses_proyecto'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'convenio'); ?>
+			<?php echo $form->textField($model,'convenio',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'convenio'); ?>
+		</div>	
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'monto_total_convocatoria'); ?>
-		<?php echo $form->textField($model,'monto_total_convocatoria'); ?>
-		<?php echo $form->error($model,'monto_total_convocatoria'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'cdp'); ?>
+			<?php echo $form->textField($model,'cdp',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'cdp'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'fecha_cdp'); ?>
+			<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				'model'=>$model,
+				'attribute'=>'fecha_cdp',
+				'value'=>$model->fecha_cdp,
+				'language' => 'es',
+				'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
+				'options'=>array(
+				'autoSize'=>true,
+				'defaultDate'=>$model->fecha_cdp,
+				'dateFormat'=>'yy-mm-dd',
+				'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
+				'buttonImageOnly'=>true,
+				'buttonText'=>'Fecha',
+				'selectOtherMonths'=>true,
+				'showAnim'=>'slide',
+				'showButtonPanel'=>true,
+				'showOn'=>'button', 
+				'showOtherMonths'=>true, 
+				'changeMonth' => 'true', 
+				'changeYear' => 'true', 
+				'minDate'=>'1900-01-01', 
+				'maxDate'=> '0',
+				),
+			));?>
+			<?php echo $form->error($model,'fecha_cdp'); ?>
+		</div>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'convenio'); ?>
-		<?php echo $form->textField($model,'convenio',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'convenio'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'cdp'); ?>
-		<?php echo $form->textField($model,'cdp',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'cdp'); ?>
-	</div>
-
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->labelEx($model,'fecha_cdp'); ?>
 		<?php echo $form->textField($model,'fecha_cdp'); ?>
 		<?php echo $form->error($model,'fecha_cdp'); ?>
-	</div>
+	</div>-->
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'cdr'); ?>
-		<?php echo $form->textField($model,'cdr',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'cdr'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'cdr'); ?>
+			<?php echo $form->textField($model,'cdr',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'cdr'); ?>
+		</div>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'fecha_cdr'); ?>
+			<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				'model'=>$model,
+				'attribute'=>'fecha_cdr',
+				'value'=>$model->fecha_cdr,
+				'language' => 'es',
+				'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px; border-color: rgb(211,211,211);'),
+				'options'=>array(
+				'autoSize'=>true,
+				'defaultDate'=>$model->fecha_cdr,
+				'dateFormat'=>'yy-mm-dd',
+				'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
+				'buttonImageOnly'=>true,
+				'buttonText'=>'Fecha',
+				'selectOtherMonths'=>true,
+				'showAnim'=>'slide',
+				'showButtonPanel'=>true,
+				'showOn'=>'button', 
+				'showOtherMonths'=>true, 
+				'changeMonth' => 'true', 
+				'changeYear' => 'true', 
+				'minDate'=>'1900-01-01', 
+				'maxDate'=> '0',
+				),
+			));?>
+			<?php echo $form->error($model,'fecha_cdr'); ?>
+		</div>
 	</div>
 
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->labelEx($model,'fecha_cdr'); ?>
 		<?php echo $form->textField($model,'fecha_cdr'); ?>
 		<?php echo $form->error($model,'fecha_cdr'); ?>
+	</div>-->
+
+	<div class="row">
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'url'); ?>
+			<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'url'); ?>
+		</div>	
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'url'); ?>
-		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'url'); ?>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'linea_investigacion'); ?>
+			<?php echo $form->DropDownList($model,'linea_investigacion',array('empty'=>'Seleccione', 'Gran Linea'=>'Gran Linea', 'Linea'=>'Linea', 'Disciplina'=>'Disciplina')); ?>
+			<?php echo $form->error($model,'linea_investigacion'); ?>
+		</div>	
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'linea_investigacion'); ?>
-		<?php echo $form->DropDownList($model,'linea_investigacion',array('empty'=>'Seleccione', 'Gran Linea'=>'Gran Linea', 'Linea'=>'Linea', 'Disciplina'=>'Disciplina')); ?>
-		<?php echo $form->error($model,'linea_investigacion'); ?>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'postulacion_anticipada'); ?>
+			<?php echo $form->DropDownList($model,'postulacion_anticipada',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
+			<?php echo $form->error($model,'postulacion_anticipada'); ?>
+		</div>	
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'postulacion_anticipada'); ?>
-		<?php echo $form->DropDownList($model,'postulacion_anticipada',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
-		<?php echo $form->error($model,'postulacion_anticipada'); ?>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'definir_estructura_convocatoria'); ?>
+			<?php echo $form->DropDownList($model,'definir_estructura_convocatoria',array('empty'=>'Seleccione', 'Plantilla1'=>'Plantilla1',
+			'Plantilla2'=>'Plantilla2','Plantilla3'=>'Plantilla3','Plantilla4'=>'Plantilla4','Plantilla5'=>'Plantilla5',)); ?>
+			<?php echo $form->error($model,'definir_estructura_convocatoria'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'definir_estructura_convocatoria'); ?>
-		<?php echo $form->textField($model,'definir_estructura_convocatoria',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'definir_estructura_convocatoria'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'numero_proyecto_inversion'); ?>
-		<?php echo $form->textField($model,'numero_proyecto_inversion'); ?>
-		<?php echo $form->error($model,'numero_proyecto_inversion'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'vigencia'); ?>
-		<?php echo $form->textField($model,'vigencia',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'vigencia'); ?>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'numero_proyecto_inversion'); ?>
+			<?php echo $form->textField($model,'numero_proyecto_inversion'); ?>
+			<?php echo $form->error($model,'numero_proyecto_inversion'); ?>
+		</div>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'vigencia'); ?>
+			<?php echo $form->textField($model,'vigencia',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'vigencia'); ?>
+		</div>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Aceptar' : 'Save'); ?>
+		<div class="col-lg-4">
+			<?php echo CHtml::submitButton($model->isNewRecord ? 'Aceptar' : 'Save'); ?>
+		</div>
 	</div>
 
 <?php $this->endWidget(); ?>
