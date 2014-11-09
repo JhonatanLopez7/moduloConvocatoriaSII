@@ -96,9 +96,38 @@
 		<?php echo $form->error($model,'fecha_apertura'); ?>
 	</div>
 
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->labelEx($model,'fecha_cierre'); ?>
 		<?php echo $form->textField($model,'fecha_cierre'); ?>
+		<?php echo $form->error($model,'fecha_cierre'); ?>
+	</div>-->
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'fecha_cierre'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'model'=>$model,
+			'attribute'=>'fecha_cierre',
+			'value'=>$model->fecha_cierre,
+			'language' => 'es',
+			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px;  border-style: dotted; border-color: rgb(211,211,211);'),
+			'options'=>array(
+			'autoSize'=>true,
+			'defaultDate'=>$model->fecha_cierre,
+			'dateFormat'=>'yy-mm-dd',
+			'buttonImage'=>Yii::app()->baseUrl.'/images/calendario.png',
+			'buttonImageOnly'=>true,
+			'buttonText'=>'Fecha',
+			'selectOtherMonths'=>true,
+			'showAnim'=>'slide',
+			'showButtonPanel'=>true,
+			'showOn'=>'button', 
+			'showOtherMonths'=>true, 
+			'changeMonth' => 'true', 
+			'changeYear' => 'true', 
+			'minDate'=>'1900-01-01', 
+			'maxDate'=> '0',
+			),
+		));?>
 		<?php echo $form->error($model,'fecha_cierre'); ?>
 	</div>
 
