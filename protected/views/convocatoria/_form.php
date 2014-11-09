@@ -42,7 +42,7 @@
 		'Reconocimiento de pares'=>'Reconocimiento de pares','Reconocimiento de centros'=>'Reconocimiento de centros','Reconocimiento de editoriales'=>'Reconocimiento de editoriales',
 		'Indexacion y homologacion de revistas'=>'Indexacion y homologacion de revistas','Ondas'=>'Ondas', 'Jovenes Investigadores'=>'Jovenes Investigadores',
 		'Jovenes Ingenieros'=>'Jovenes Ingenieros', 'Semillero Investigacion'=>'Semillero Investigacion', 'Maestria'=>'Maestria','Doctorado Nacional'=>'Doctorado Nacional', 
-		'Doctorado internacional'=>'Doctorado internacional','Insercion laboral'=>'Insercion laboral','PostDoctorados'=>'PostDoctorados'
+		'Doctorado internacional'=>'Doctorado internacional','Insercion laboral'=>'Insercion laboral','PostDoctorados'=>'PostDoctorados',
 		'Pasantias'=>'Pasantias','Ideas para el cambio'=>'Ideas para el cambio', 'A ciencia cierta'=>'A ciencia cierta', 'Anexos'=>'Anexos'
 		'Eventos'=>'Eventos','Semana Nacional C+T'=>'Semana Nacional C+T')); ?>
 		<?php echo $form->error($model,'subtipo_convocatoria'); ?>
