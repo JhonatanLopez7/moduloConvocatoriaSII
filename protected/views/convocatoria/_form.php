@@ -72,7 +72,7 @@
 		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
 			'model'=>$model,
 			'attribute'=>'fecha_apertura',
-			'value'=>$model->fechaExpedicionDoc,
+			'value'=>$model->fecha_apertura,
 			'language' => 'es',
 			'htmlOptions' => array('readonly'=>"readonly",'style'=>'border-radius: 7px;  border-style: dotted; border-color: rgb(211,211,211);'),
 			'options'=>array(
