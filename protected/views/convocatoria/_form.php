@@ -27,13 +27,21 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'tipo_convocatoria'); ?>
-		<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 'Proyectos'=>'Proyectos', 'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias')); ?>
+		<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 'Proyectos'=>'Proyectos', 
+		'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias')); ?>
 		<?php echo $form->error($model,'tipo_convocatoria'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'subtipo_convocatoria'); ?>
-		<?php echo $form->textField($model,'subtipo_convocatoria',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->DropDownList($model,'subtipo_convocatoria',array('empty'=>'Seleccione', 'Investigacion'=>'Investigacion', 
+		'I+D'=>'I+D', 'Inovcacion'=>'Inovcacion', 'Emprendimiento'=>'Emprendimiento', 'Beneficios tributarios-Renta exenta por nuevo software'
+		=>'Beneficios tributarios-Renta exenta por nuevo software','Beneficios tributarios-Deduccion por inversion o donacion'
+		=>'Beneficios tributarios-Deduccion por inversion o donacion','Beneficios tributarios-Exencion de IVA por importacion de equipos'
+		=>'Beneficios tributarios-Exencion de IVA por importacion de equipos','Reconocimiento y medicion de grupos'=>'Reconocimiento y medicion de grupos',
+		'Reconocimiento de pares'=>'Reconocimiento de pares','Reconocimiento de centros'=>'Reconocimiento de centros','Reconocimiento de editoriales'=>'Reconocimiento de editoriales',
+		'Indexacion y homologacion de revistas'=>'Indexacion y homologacion de revistas','Ondas'=>'Ondas', 'Jovenes Investigadores'=>'Jovenes Investigadores',
+		'Jovenes Ingenieros'=>'Jovenes Ingenieros', 'Semillero Investigacion'=>'Semillero Investigacion')); ?>
 		<?php echo $form->error($model,'subtipo_convocatoria'); ?>
 	</div>
 
