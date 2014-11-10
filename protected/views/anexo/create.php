@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Anexos'=>array('index'),
-	'Create',
+	'Crear Anexo',
 );
 
 $this->menu=array(
-	array('label'=>'List Anexo', 'url'=>array('index')),
-	array('label'=>'Manage Anexo', 'url'=>array('admin')),
+	array('label'=>'Listar Anexos', 'url'=>array('index')),
+	array('label'=>'Administrar Anexos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Anexo</h1>
+<h1>Crear Anexos</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

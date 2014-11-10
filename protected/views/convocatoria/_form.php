@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
+<div class="form col-lg-12">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'convocatoria-form',
@@ -24,7 +24,6 @@
 		<?php echo $form->textField($model,'tipo_convocatoria',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'tipo_convocatoria'); ?>
 	</div>-->
-
 	<div class="row">
 		<div class="col-lg-3">
 			<?php echo $form->labelEx($model,'tipo_convocatoria'); ?>
@@ -438,13 +437,13 @@
 	</div>
 
 	<div class="row buttons">
-		<div class="botones col-lg-4">
+		<div class="col-lg-4">
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Cancelar' : 'Save'); ?>
 		</div>
-		<div class="botones col-lg-4">
-			<?php echo CHtml::submitButton('index'); ?>
+		<div class="col-lg-4">
+			<a class="button btn btn-default" href="../anexo/admin">Anexos</a>
 		</div>
-		<div class="botones col-lg-4">
+		<div class="col-lg-4">
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar cambios' : 'Save'); ?>
 		</div>
 	</div>
