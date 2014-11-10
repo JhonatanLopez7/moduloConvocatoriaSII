@@ -13,6 +13,25 @@ $this->menu=array(
 );
 ?>
 
-<h1>Crear Anexos</h1>
+<div class="TituloCrear">
+	<div class="Texto">
+		<h2 class="Titulo">Crear Anexos</h2>
+	</div>
+	
+</div>
+
+
+<style>
+	.TituloCrear{
+		/*background: #69A8CD; color original*/
+		background: #669999;	
+	}
+	.Texto{
+		margin-left: 250px;
+	}
+	.Titulo{
+		color: #FFFFFF;
+	}
+</style>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
