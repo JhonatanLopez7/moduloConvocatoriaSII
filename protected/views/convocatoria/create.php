@@ -12,7 +12,25 @@ $this->menu=array(
 	array('label'=>'Administrar Convocatorias', 'url'=>array('admin')),
 );
 ?>
+<div class="TituloCrear">
+	<div class="Texto">
+		<h1 class="Titulo">Crear Convocatorias</h1>
+	</div>
+	
+</div>
 
-<h1>Crear Convocatorias</h1>
+
+<style>
+	.TituloCrear{
+		/*background: #69A8CD; color original*/
+		background: #669999;	
+	}
+	.Texto{
+		margin-left: 230px;
+	}
+	.Titulo{
+		color: #FFFFFF;
+	}
+</style>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
