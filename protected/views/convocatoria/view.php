@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Convocatoria', 'url'=>array('index')),
-	array('label'=>'Create Convocatoria', 'url'=>array('create')),
-	array('label'=>'Update Convocatoria', 'url'=>array('update', 'id'=>$model->codigo_convocatoria)),
-	array('label'=>'Delete Convocatoria', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->codigo_convocatoria),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Convocatoria', 'url'=>array('admin')),
+	array('label'=>'Listado de Convocatorias', 'url'=>array('index')),
+	array('label'=>'Crear nueva Convocatoria y/o Servicio', 'url'=>array('create')),
+	array('label'=>'Editar Convocatoria', 'url'=>array('update', 'id'=>$model->codigo_convocatoria)),
+	array('label'=>'Eliminar Convocatoria', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->codigo_convocatoria),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Convocatorias', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Convocatoria #<?php echo $model->codigo_convocatoria; ?></h1>
+<h1>Ver Convocatoria #<?php echo $model->codigo_convocatoria; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

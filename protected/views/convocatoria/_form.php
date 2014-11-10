@@ -438,11 +438,16 @@
 	</div>
 
 	<div class="row buttons">
-		<div class="col-lg-4">
-			<?php echo CHtml::submitButton($model->isNewRecord ? 'Aceptar' : 'Save'); ?>
+		<div class="botones col-lg-4">
+			<?php echo CHtml::submitButton($model->isNewRecord ? 'Cancelar' : 'Save'); ?>
+		</div>
+		<div class="botones col-lg-4">
+			<?php echo CHtml::submitButton('index'); ?>
+		</div>
+		<div class="botones col-lg-4">
+			<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar cambios' : 'Save'); ?>
 		</div>
 	</div>
-
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->

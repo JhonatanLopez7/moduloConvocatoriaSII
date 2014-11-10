@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Convocatoria', 'url'=>array('create')),
-	array('label'=>'Manage Convocatoria', 'url'=>array('admin')),
+	array('label'=>'Crear nueva Convocatoria y/o Servicio', 'url'=>array('create')),
+	array('label'=>'Administrar Convocatorias', 'url'=>array('admin')),
 );
 ?>
 

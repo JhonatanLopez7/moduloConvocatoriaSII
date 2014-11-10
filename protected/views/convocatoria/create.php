@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	/*array('label'=>'Listar Convocatoria', 'url'=>array('index')),*/
+	array('label'=>'Listar Convocatorias', 'url'=>array('index')),
 	array('label'=>'Administrar Convocatorias', 'url'=>array('admin')),
 );
 ?>
