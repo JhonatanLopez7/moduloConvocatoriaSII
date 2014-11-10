@@ -25,6 +25,10 @@
 
 	<div id="header">
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<div>
+		<img src="../images/logo.png" alt="" class="image" height="" style="margin-left:772px;margin-top:-51px;;"/>
+		</div>
+
 	</div><!-- header -->
 
 	<div id="mainmenu">
