@@ -21,9 +21,9 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
+		'codigo',
 		'nombre',
 		'ruta',
-		'codigo',
-		'convocatoria_fk',
+		/*'convocatoria_fk',*/
 	),
 )); ?>

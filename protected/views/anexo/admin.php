@@ -37,10 +37,10 @@ $this->menu=array(
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
+		'codigo',
 		'nombre',
 		'ruta',
-		'codigo',
-		'convocatoria_fk',
+		/*'convocatoria_fk',*/
 		array(
 			'class'=>'CButtonColumn',
 		),

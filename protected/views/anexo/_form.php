@@ -20,6 +20,12 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'codigo'); ?>
+		<?php echo $form->textField($model,'codigo'); ?>
+		<?php echo $form->error($model,'codigo'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'nombre'); ?>
 		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'nombre'); ?>
@@ -31,20 +37,14 @@
 		<?php echo $form->error($model,'ruta'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'codigo'); ?>
-		<?php echo $form->textField($model,'codigo'); ?>
-		<?php echo $form->error($model,'codigo'); ?>
-	</div>
-
 	<!--<div class="row">
 		<?php echo $form->labelEx($model,'convocatoria_fk'); ?>
 		<?php echo $form->textField($model,'convocatoria_fk'); ?>
 		<?php echo $form->error($model,'convocatoria_fk'); ?>
-	</div>-
+	</div>-->
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

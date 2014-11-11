@@ -16,10 +16,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ruta')); ?>:</b>
 	<?php echo CHtml::encode($data->ruta); ?>
 	<br />
-
+<!--
 	<b><?php echo CHtml::encode($data->getAttributeLabel('convocatoria_fk')); ?>:</b>
 	<?php echo CHtml::encode($data->convocatoria_fk); ?>
-	<br />
+	<br />-->
 
 
 </div>
