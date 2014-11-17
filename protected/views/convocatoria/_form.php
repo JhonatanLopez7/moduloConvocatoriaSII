@@ -29,7 +29,7 @@
 		<div class="col-lg-3">
 			<?php echo $form->labelEx($model,'tipo_convocatoria'); ?>
 			<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 'Proyectos'=>'Proyectos', 
-			'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias')); ?>
+			'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'tipo_convocatoria'); ?>
 		</div>
 		<div class="col-lg-4">
@@ -44,7 +44,7 @@
 			'Jovenes Ingenieros'=>'Jovenes Ingenieros', 'Semillero Investigacion'=>'Semillero Investigacion', 'Maestria'=>'Maestria','Doctorado Nacional'=>'Doctorado Nacional', 
 			'Doctorado internacional'=>'Doctorado internacional','Insercion laboral'=>'Insercion laboral','PostDoctorados'=>'PostDoctorados',
 			'Pasantias'=>'Pasantias','Ideas para el cambio'=>'Ideas para el cambio', 'A ciencia cierta'=>'A ciencia cierta', 'Anexos'=>'Anexos',
-			'Eventos'=>'Eventos','Semana Nacional C+T'=>'Semana Nacional C+T')); ?>
+			'Eventos'=>'Eventos','Semana Nacional C+T'=>'Semana Nacional C+T'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'subtipo_convocatoria'); ?>
 		</div>
 	</div>	
@@ -52,13 +52,13 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'convocatoria_programa'); ?>
-			<?php echo $form->DropDownList($model,'convocatoria_programa',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
+			<?php echo $form->DropDownList($model,'convocatoria_programa',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'convocatoria_programa'); ?>
 		</div>
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'tipo_financiacion'); ?>
 			<?php echo $form->DropDownList($model,'tipo_financiacion',array('empty'=>'Seleccione','Cofinancion'=>'Cofinancion',
-			'Recuperacion contingente'=>'Recuperacion contingente','Credito condonable'=>'Credito condonable', 'Beca pasantia'=>'Beca pasantia')); ?>
+			'Recuperacion contingente'=>'Recuperacion contingente','Credito condonable'=>'Credito condonable', 'Beca pasantia'=>'Beca pasantia'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'tipo_financiacion'); ?>
 		</div>
 		<div class="col-lg-4">
@@ -402,7 +402,7 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'linea_investigacion'); ?>
-			<?php echo $form->DropDownList($model,'linea_investigacion',array('empty'=>'Seleccione', 'Gran Linea'=>'Gran Linea', 'Linea'=>'Linea', 'Disciplina'=>'Disciplina')); ?>
+			<?php echo $form->DropDownList($model,'linea_investigacion',array('empty'=>'Seleccione', 'Gran Linea'=>'Gran Linea', 'Linea'=>'Linea', 'Disciplina'=>'Disciplina'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'linea_investigacion'); ?>
 		</div>	
 	</div>
@@ -410,7 +410,7 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'postulacion_anticipada'); ?>
-			<?php echo $form->DropDownList($model,'postulacion_anticipada',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
+			<?php echo $form->DropDownList($model,'postulacion_anticipada',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'postulacion_anticipada'); ?>
 		</div>	
 	</div>
@@ -419,7 +419,7 @@
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'definir_estructura_convocatoria'); ?>
 			<?php echo $form->DropDownList($model,'definir_estructura_convocatoria',array('empty'=>'Seleccione', 'Plantilla1'=>'Plantilla1',
-			'Plantilla2'=>'Plantilla2','Plantilla3'=>'Plantilla3','Plantilla4'=>'Plantilla4','Plantilla5'=>'Plantilla5',)); ?>
+			'Plantilla2'=>'Plantilla2','Plantilla3'=>'Plantilla3','Plantilla4'=>'Plantilla4','Plantilla5'=>'Plantilla5',),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'definir_estructura_convocatoria'); ?>
 		</div>
 	</div>
@@ -427,7 +427,7 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'numero_proyecto_inversion'); ?>
-			<?php echo $form->textField($model,'numero_proyecto_inversion',array('style'=>'border-radius:7px;')); ?>
+			<?php echo $form->textField($model,'numero_proyecto_inversion',array('style'=>'border-radius:7px;'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'numero_proyecto_inversion'); ?>
 		</div>
 		<div class="col-lg-8">
