@@ -33,7 +33,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ruta'); ?>
-		<?php echo $form->textField($model,'ruta',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo CHtml::activeFileField($model,'ruta',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'ruta'); ?>
 	</div>
 
