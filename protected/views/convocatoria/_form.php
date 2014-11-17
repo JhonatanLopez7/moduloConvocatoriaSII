@@ -15,7 +15,8 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">En este espacio diligencie los campos requeridos. Los datos marcados con <span class="required">*</span> son obligatorios, cuando termine de click en aceptar.</p>
+	<!--<p class="note">-->
+	<p>En este espacio diligencie los campos requeridos. Los datos marcados con <span class="required">*</span> son obligatorios, cuando termine de click en aceptar.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -28,7 +29,7 @@
 		<div class="col-lg-3">
 			<?php echo $form->labelEx($model,'tipo_convocatoria'); ?>
 			<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 'Proyectos'=>'Proyectos', 
-			'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias')); ?>
+			'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'tipo_convocatoria'); ?>
 		</div>
 		<div class="col-lg-4">
@@ -43,7 +44,7 @@
 			'Jovenes Ingenieros'=>'Jovenes Ingenieros', 'Semillero Investigacion'=>'Semillero Investigacion', 'Maestria'=>'Maestria','Doctorado Nacional'=>'Doctorado Nacional', 
 			'Doctorado internacional'=>'Doctorado internacional','Insercion laboral'=>'Insercion laboral','PostDoctorados'=>'PostDoctorados',
 			'Pasantias'=>'Pasantias','Ideas para el cambio'=>'Ideas para el cambio', 'A ciencia cierta'=>'A ciencia cierta', 'Anexos'=>'Anexos',
-			'Eventos'=>'Eventos','Semana Nacional C+T'=>'Semana Nacional C+T')); ?>
+			'Eventos'=>'Eventos','Semana Nacional C+T'=>'Semana Nacional C+T'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'subtipo_convocatoria'); ?>
 		</div>
 	</div>	
@@ -51,13 +52,13 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'convocatoria_programa'); ?>
-			<?php echo $form->DropDownList($model,'convocatoria_programa',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
+			<?php echo $form->DropDownList($model,'convocatoria_programa',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'convocatoria_programa'); ?>
 		</div>
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'tipo_financiacion'); ?>
 			<?php echo $form->DropDownList($model,'tipo_financiacion',array('empty'=>'Seleccione','Cofinancion'=>'Cofinancion',
-			'Recuperacion contingente'=>'Recuperacion contingente','Credito condonable'=>'Credito condonable', 'Beca pasantia'=>'Beca pasantia')); ?>
+			'Recuperacion contingente'=>'Recuperacion contingente','Credito condonable'=>'Credito condonable', 'Beca pasantia'=>'Beca pasantia'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'tipo_financiacion'); ?>
 		</div>
 		<div class="col-lg-4">
@@ -204,12 +205,12 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'convocatoria'); ?>
-			<?php echo $form->textField($model,'convocatoria',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->textField($model,'convocatoria',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'convocatoria'); ?>
 		</div>
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'codigo_convocatoria'); ?>
-			<?php echo $form->textField($model,'codigo_convocatoria'); ?>
+			<?php echo $form->textField($model,'codigo_convocatoria',array('style'=>'border-radius:7px;')); ?>
 			<?php echo $form->error($model,'codigo_convocatoria'); ?>
 		</div>
 	</div>
@@ -217,7 +218,7 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'descripcion'); ?>
-			<?php echo $form->textField($model,'descripcion',array('size'=>60,'maxlength'=>250)); ?>
+			<?php echo $form->textarea($model,'descripcion',array('style'=>'border-radius:7px; width: 430px; height:70px;','size'=>500,'maxlength'=>500)); ?>
 			<?php echo $form->error($model,'descripcion'); ?>
 		</div>
 	</div>
@@ -225,7 +226,7 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'objeto'); ?>
-			<?php echo $form->textField($model,'objeto',array('size'=>60,'maxlength'=>150)); ?>
+			<?php echo $form->textarea($model,'objeto',array('style'=>'border-radius:7px; width: 430px; height:70px;','size'=>60,'maxlength'=>150)); ?>
 			<?php echo $form->error($model,'objeto'); ?>
 		</div>
 	</div>
@@ -233,7 +234,7 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'dirigido_a'); ?>
-			<?php echo $form->textField($model,'dirigido_a',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->textarea($model,'dirigido_a',array('style'=>'border-radius:7px; width: 430px; height:70px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'dirigido_a'); ?>
 		</div>
 	</div>
@@ -241,7 +242,7 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'programa_base'); ?>
-			<?php echo $form->textField($model,'programa_base',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->textField($model,'programa_base',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'programa_base'); ?>
 		</div>
 	</div>
@@ -249,7 +250,7 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'instituciones_financiadoras'); ?>
-			<?php echo $form->textField($model,'instituciones_financiadoras',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->textField($model,'instituciones_financiadoras',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'instituciones_financiadoras'); ?>
 		</div>
 	</div>
@@ -257,12 +258,12 @@
 	<div class="row">
 		<div class="col-lg-6">
 			<?php echo $form->labelEx($model,'maximo_porcentaje_financiar'); ?>
-			<?php echo $form->textField($model,'maximo_porcentaje_financiar'); ?>
+			<?php echo $form->textField($model,'maximo_porcentaje_financiar',array('style'=>'border-radius:7px;')); ?>
 			<?php echo $form->error($model,'maximo_porcentaje_financiar'); ?>
 		</div>	
 		<div class="col-lg-6">
 			<?php echo $form->labelEx($model,'minimo_porcentaje_financiar'); ?>
-			<?php echo $form->textField($model,'minimo_porcentaje_financiar'); ?>
+			<?php echo $form->textField($model,'minimo_porcentaje_financiar',array('style'=>'border-radius:7px;')); ?>
 			<?php echo $form->error($model,'minimo_porcentaje_financiar'); ?>
 		</div>
 	</div>
@@ -270,12 +271,12 @@
 	<div class="row">
 		<div class="col-lg-6">
 			<?php echo $form->labelEx($model,'minimo_porcentaje_contrapartida_dinero'); ?>
-			<?php echo $form->textField($model,'minimo_porcentaje_contrapartida_dinero'); ?>
+			<?php echo $form->textField($model,'minimo_porcentaje_contrapartida_dinero',array('style'=>'border-radius:7px;')); ?>
 			<?php echo $form->error($model,'minimo_porcentaje_contrapartida_dinero'); ?>
 		</div>	
 		<div class="col-lg-6">
 			<?php echo $form->labelEx($model,'minimo_porcentaje_contrapartida_especie'); ?>
-			<?php echo $form->textField($model,'minimo_porcentaje_contrapartida_especie'); ?>
+			<?php echo $form->textField($model,'minimo_porcentaje_contrapartida_especie',array('style'=>'border-radius:7px;')); ?>
 			<?php echo $form->error($model,'minimo_porcentaje_contrapartida_especie'); ?>
 		</div>
 	</div>
@@ -283,17 +284,17 @@
 	<div class="row">
 		<div class="col-lg-4">
 		<?php echo $form->labelEx($model,'monto_maximo_financiar'); ?>
-		<?php echo $form->textField($model,'monto_maximo_financiar'); ?>
+		<?php echo $form->textField($model,'monto_maximo_financiar',array('style'=>'border-radius:7px;')); ?>
 		<?php echo $form->error($model,'monto_maximo_financiar'); ?>
 		</div>
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'numero_maximo_meses_proyecto'); ?>
-			<?php echo $form->textField($model,'numero_maximo_meses_proyecto'); ?>
+			<?php echo $form->textField($model,'numero_maximo_meses_proyecto',array('style'=>'border-radius:7px;')); ?>
 			<?php echo $form->error($model,'numero_maximo_meses_proyecto'); ?>
 		</div>
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'monto_total_convocatoria'); ?>
-			<?php echo $form->textField($model,'monto_total_convocatoria'); ?>
+			<?php echo $form->textField($model,'monto_total_convocatoria',array('style'=>'border-radius:7px;')); ?>
 			<?php echo $form->error($model,'monto_total_convocatoria'); ?>
 		</div>
 	</div>
@@ -301,15 +302,15 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'convenio'); ?>
-			<?php echo $form->textField($model,'convenio',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->textField($model,'convenio',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'convenio'); ?>
 		</div>	
 	</div>
 
 	<div class="row">
 		<div class="col-lg-8">
-			<?php echo $form->labelEx($model,'cdp'); ?>
-			<?php echo $form->textField($model,'cdp',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->labelEx($model,'CDP'); ?>
+			<?php echo $form->textField($model,'cdp',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'cdp'); ?>
 		</div>
 		<div class="col-lg-4">
@@ -350,8 +351,8 @@
 
 	<div class="row">
 		<div class="col-lg-8">
-			<?php echo $form->labelEx($model,'cdr'); ?>
-			<?php echo $form->textField($model,'cdr',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->labelEx($model,'CDR'); ?>
+			<?php echo $form->textField($model,'cdr',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'cdr'); ?>
 		</div>
 		<div class="col-lg-4">
@@ -392,8 +393,8 @@
 
 	<div class="row">
 		<div class="col-lg-8">
-			<?php echo $form->labelEx($model,'url'); ?>
-			<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->labelEx($model,'URL'); ?>
+			<?php echo $form->textarea($model,'url',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'url'); ?>
 		</div>	
 	</div>
@@ -401,7 +402,7 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'linea_investigacion'); ?>
-			<?php echo $form->DropDownList($model,'linea_investigacion',array('empty'=>'Seleccione', 'Gran Linea'=>'Gran Linea', 'Linea'=>'Linea', 'Disciplina'=>'Disciplina')); ?>
+			<?php echo $form->DropDownList($model,'linea_investigacion',array('empty'=>'Seleccione', 'Gran Linea'=>'Gran Linea', 'Linea'=>'Linea', 'Disciplina'=>'Disciplina'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'linea_investigacion'); ?>
 		</div>	
 	</div>
@@ -409,7 +410,7 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'postulacion_anticipada'); ?>
-			<?php echo $form->DropDownList($model,'postulacion_anticipada',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No')); ?>
+			<?php echo $form->DropDownList($model,'postulacion_anticipada',array('empty'=>'Seleccione', 'Si'=>'Si', 'No'=>'No'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'postulacion_anticipada'); ?>
 		</div>	
 	</div>
@@ -418,7 +419,7 @@
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'definir_estructura_convocatoria'); ?>
 			<?php echo $form->DropDownList($model,'definir_estructura_convocatoria',array('empty'=>'Seleccione', 'Plantilla1'=>'Plantilla1',
-			'Plantilla2'=>'Plantilla2','Plantilla3'=>'Plantilla3','Plantilla4'=>'Plantilla4','Plantilla5'=>'Plantilla5',)); ?>
+			'Plantilla2'=>'Plantilla2','Plantilla3'=>'Plantilla3','Plantilla4'=>'Plantilla4','Plantilla5'=>'Plantilla5',),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'definir_estructura_convocatoria'); ?>
 		</div>
 	</div>
@@ -426,12 +427,12 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'numero_proyecto_inversion'); ?>
-			<?php echo $form->textField($model,'numero_proyecto_inversion'); ?>
+			<?php echo $form->textField($model,'numero_proyecto_inversion',array('style'=>'border-radius:7px;'),array('style'=>'border-radius: 7px;')); ?>
 			<?php echo $form->error($model,'numero_proyecto_inversion'); ?>
 		</div>
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'vigencia'); ?>
-			<?php echo $form->textField($model,'vigencia',array('size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->textField($model,'vigencia',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'vigencia'); ?>
 		</div>
 	</div>
@@ -441,7 +442,7 @@
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Cancelar' : 'Save'); ?>
 		</div>
 		<div class="col-lg-4">
-			<a class="button btn btn-default" href="../anexo/admin">Anexos</a>
+			<button style="margin-left: 159px; margin-top: 3px;"><a href="../anexo/admin">Anexos</a></button>
 		</div>
 		<div class="col-lg-4">
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar cambios' : 'Save'); ?>
