@@ -394,7 +394,7 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<?php echo $form->labelEx($model,'URL'); ?>
-			<?php echo $form->textField($model,'url',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->textarea($model,'url',array('style'=>'border-radius:7px;','size'=>60,'maxlength'=>100)); ?>
 			<?php echo $form->error($model,'url'); ?>
 		</div>	
 	</div>
