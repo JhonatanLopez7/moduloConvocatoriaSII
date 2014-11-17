@@ -26,7 +26,7 @@
 		<?php echo $form->error($model,'tipo_convocatoria'); ?>
 	</div>-->
 	<div class="row">
-		<div class="col-lg-3" style:"border-radius: 7px;">
+		<div class="col-lg-3">
 			<?php echo $form->labelEx($model,'tipo_convocatoria'); ?>
 			<?php echo $form->DropDownList($model,'tipo_convocatoria',array('empty'=>'Seleccione', 'Proyectos'=>'Proyectos', 
 			'Servicios'=>'Servicios', 'Formacion'=>'Formacion', 'Apropiacion Social'=>'Apropiacion Social', 'Regalias'=>'Regalias')); ?>
@@ -442,7 +442,7 @@
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Cancelar' : 'Save'); ?>
 		</div>
 		<div class="col-lg-4">
-			<a class="button btn btn-default" href="../anexo/admin">Anexos</a>
+			<button style="margin-left: 159px; margin-top: 3px;"><a href="../anexo/admin">Anexos</a></button>
 		</div>
 		<div class="col-lg-4">
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar cambios' : 'Save'); ?>
