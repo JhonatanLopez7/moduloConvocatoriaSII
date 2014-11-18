@@ -69,7 +69,10 @@ class AnexoController extends Controller
 
 		if(isset($_POST['Anexo']))
 		{
+			date_default_timezone_set('America/Bogota');
+			$fecha=date("Y/m/d");
 			$model->attributes=$_POST['Anexo'];
+			$model->fecha=$fecha;
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->codigo));
 		}

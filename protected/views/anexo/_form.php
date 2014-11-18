@@ -20,6 +20,13 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'convoctoria'); ?>
+		<?php $datos = CHtml::listData(Convocatoria::model()->findAll(),'codigo_convocatoria','convocatoria');
+		echo $form->DropDownList($model,'convoctoria', $datos , array('empty'=>'--Seleccione una opcion--')); ?>
+		<?php echo $form->error($model,'convoctoria'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'nombre'); ?>
 		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'nombre'); ?>
@@ -27,22 +34,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ruta'); ?>
-		<?php echo $form->textField($model,'ruta',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo CHtml::activeFileField($model,'ruta',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'ruta'); ?>
-	</div>
-
-	<!--<div class="row">
-		<?php echo $form->labelEx($model,'convoctoria'); ?>
-		<?php echo $form->textField($model,'convoctoria'); ?>
-		<?php echo $form->error($model,'convoctoria'); ?>
-	</div>-->
-
-	<div class="row">
-		<?php date_default_timezone_set('America/Bogota'); ?>
-		<?php $fecha=date("Y-m-d"); ?>
-		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->DropDownList($model,'fecha', array('empty'=>date("Y-m-d"))); ?>
-		<?php echo $form->error($model,'fecha'); ?>
 	</div>
 
 	<div class="row buttons">
