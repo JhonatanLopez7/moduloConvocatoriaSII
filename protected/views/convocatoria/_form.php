@@ -83,8 +83,8 @@
 				'showOtherMonths'=>true, 
 				'changeMonth' => 'true', 
 				'changeYear' => 'true', 
-				'minDate'=>'1900-01-01', 
-				'maxDate'=> '0',
+				'minDate'=>'0', 
+				'maxDate'=> '2020-12-12',
 				),
 				));?>
 				<?php echo $form->error($model,'fecha_apertura'); ?>
@@ -120,8 +120,8 @@
 				'showOtherMonths'=>true, 
 				'changeMonth' => 'true', 
 				'changeYear' => 'true', 
-				'minDate'=>'1900-01-01', 
-				'maxDate'=> '0',
+				'minDate'=>'0', 
+				'maxDate'=> '2020-12-12',
 				),
 			));?>
 			<?php echo $form->error($model,'fecha_cierre'); ?>
@@ -148,8 +148,8 @@
 				'showOtherMonths'=>true, 
 				'changeMonth' => 'true', 
 				'changeYear' => 'true', 
-				'minDate'=>'1900-01-01', 
-				'maxDate'=> '0',
+				'minDate'=>'0', 
+				'maxDate'=> '2020-12-12',
 				),
 			));?>
 			<?php echo $form->error($model,'fecha_resultado_preliminar'); ?>
@@ -176,8 +176,8 @@
 				'showOtherMonths'=>true, 
 				'changeMonth' => 'true', 
 				'changeYear' => 'true', 
-				'minDate'=>'1900-01-01', 
-				'maxDate'=> '0',
+				'minDate'=>'0', 
+				'maxDate'=> '2020-12-12',
 				),
 			));?>
 			<?php echo $form->error($model,'fecha_resultado_definitivo'); ?>
@@ -335,8 +335,8 @@
 				'showOtherMonths'=>true, 
 				'changeMonth' => 'true', 
 				'changeYear' => 'true', 
-				'minDate'=>'1900-01-01', 
-				'maxDate'=> '0',
+				'minDate'=>'0', 
+				'maxDate'=> '2020-12-12',
 				),
 			));?>
 			<?php echo $form->error($model,'fecha_cdp'); ?>
@@ -377,8 +377,8 @@
 				'showOtherMonths'=>true, 
 				'changeMonth' => 'true', 
 				'changeYear' => 'true', 
-				'minDate'=>'1900-01-01', 
-				'maxDate'=> '0',
+				'minDate'=>'0', 
+				'maxDate'=> '2020-12-12',
 				),
 			));?>
 			<?php echo $form->error($model,'fecha_cdr'); ?>
