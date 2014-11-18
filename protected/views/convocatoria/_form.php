@@ -437,6 +437,8 @@
 		</div>
 	</div>
 
+<div style="border: 1px solid;">	
+</div>
 	<div class="row buttons">
 		<div class="col-lg-2 " style="">
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Cancelar' : 'Save'); ?>
@@ -448,6 +450,8 @@
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar cambios' : 'Save'); ?>
 		</div>
 	</div>
+<div style="border: 1px solid;">	
+</div>
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
