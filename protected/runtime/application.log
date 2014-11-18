@@ -4320,3 +4320,13 @@ Stack trace:
 REQUEST_URI=/yii/moduloConvocatoriaSII/convocatoria/create.html
 HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/convocatoria/admin.html
 ---
+2014/11/18 00:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "anexo".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('anexo')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('anexo')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('convocatoria/an...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/convocatoria/anexo
+---
