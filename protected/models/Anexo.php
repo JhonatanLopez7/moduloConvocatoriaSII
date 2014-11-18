@@ -7,10 +7,11 @@
  * @property string $nombre
  * @property string $ruta
  * @property integer $codigo
- * @property integer $convocatoria_fk
+ * @property integer $convoctoria
+ * @property string $fecha
  *
  * The followings are the available model relations:
- * @property Convocatoria $convocatoriaFk
+ * @property Convocatoria $convoctoria0
  */
 class Anexo extends CActiveRecord
 {
@@ -30,13 +31,13 @@ class Anexo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('codigo', 'required'),
-			array('codigo, convocatoria_fk', 'numerical', 'integerOnly'=>true),
+			array('convoctoria', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>100),
 			array('ruta', 'length', 'max'=>200),
+			array('fecha', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('nombre, ruta, codigo, convocatoria_fk', 'safe', 'on'=>'search'),
+			array('nombre, ruta, codigo, convoctoria, fecha', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,7 +49,7 @@ class Anexo extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'convocatoriaFk' => array(self::BELONGS_TO, 'Convocatoria', 'convocatoria_fk'),
+			'convoctoria0' => array(self::BELONGS_TO, 'Convocatoria', 'convoctoria'),
 		);
 	}
 
@@ -61,7 +62,8 @@ class Anexo extends CActiveRecord
 			'nombre' => 'Nombre',
 			'ruta' => 'Ruta',
 			'codigo' => 'Codigo',
-			'convocatoria_fk' => 'Convocatoria Fk',
+			'convoctoria' => 'Convoctoria',
+			'fecha' => 'Fecha',
 		);
 	}
 
@@ -86,7 +88,8 @@ class Anexo extends CActiveRecord
 		$criteria->compare('nombre',$this->nombre,true);
 		$criteria->compare('ruta',$this->ruta,true);
 		$criteria->compare('codigo',$this->codigo);
-		$criteria->compare('convocatoria_fk',$this->convocatoria_fk);
+		$criteria->compare('convoctoria',$this->convoctoria);
+		$criteria->compare('fecha',$this->fecha,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -14,16 +14,10 @@
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
-	<h3>Anexos</h3>
-	<p class="note">Los campos con <span class="required">*</span> son obligatorios.</p>
+
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'codigo'); ?>
-		<?php echo $form->textField($model,'codigo'); ?>
-		<?php echo $form->error($model,'codigo'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nombre'); ?>
@@ -33,18 +27,26 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ruta'); ?>
-		<?php echo CHtml::activeFileField($model,'ruta',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->textField($model,'ruta',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'ruta'); ?>
 	</div>
 
 	<!--<div class="row">
-		<?php echo $form->labelEx($model,'convocatoria_fk'); ?>
-		<?php echo $form->textField($model,'convocatoria_fk'); ?>
-		<?php echo $form->error($model,'convocatoria_fk'); ?>
+		<?php echo $form->labelEx($model,'convoctoria'); ?>
+		<?php echo $form->textField($model,'convoctoria'); ?>
+		<?php echo $form->error($model,'convoctoria'); ?>
 	</div>-->
 
+	<div class="row">
+		<?php date_default_timezone_set('America/Bogota'); ?>
+		<?php $fecha=date("Y-m-d"); ?>
+		<?php echo $form->labelEx($model,'fecha'); ?>
+		<?php echo $form->DropDownList($model,'fecha', array('empty'=>date("Y-m-d"))); ?>
+		<?php echo $form->error($model,'fecha'); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

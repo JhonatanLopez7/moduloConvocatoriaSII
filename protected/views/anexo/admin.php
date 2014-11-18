@@ -4,43 +4,52 @@
 
 $this->breadcrumbs=array(
 	'Anexos'=>array('index'),
-	'Administrar',
+	'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'Crear Anexo', 'url'=>array('create')),
-	array('label'=>'Listar Anexos', 'url'=>array('index')),
-	);
-?>
-<div class="Titulo">
-		<h2 class="Texto">Anexos</h2>
-</div>
-<div>
-	<h2 class="TextoDefinirAnexos">DEFINIR ANEXOS</h2>
-</div>
+	array('label'=>'List Anexo', 'url'=>array('index')),
+	array('label'=>'Create Anexo', 'url'=>array('create')),
+);
 
-<style>
-	.Titulo{
-		/*background: #69A8CD; color original*/
-		background: #669999;	
-	}
-		.Texto{
-		color: #FFFFFF;
-	}
-	.TextoDefinirAnexos{
-		color: #669999;
-		margin-left: 256px;
-	}
-</style>
+Yii::app()->clientScript->registerScript('search', "
+$('.search-button').click(function(){
+	$('.search-form').toggle();
+	return false;
+});
+$('.search-form form').submit(function(){
+	$('#anexo-grid').yiiGridView('update', {
+		data: $(this).serialize()
+	});
+	return false;
+});
+");
+?>
+
+<h1>Manage Anexos</h1>
+
+<p>
+You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+</p>
+
+<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<div class="search-form" style="display:none">
+<?php $this->renderPartial('_search',array(
+	'model'=>$model,
+)); ?>
+</div><!-- search-form -->
+
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'anexo-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'codigo',
 		'nombre',
 		'ruta',
-		/*'convocatoria_fk',*/
+		'codigo',
+		'convoctoria',
+		'fecha',
 		array(
 			'class'=>'CButtonColumn',
 		),

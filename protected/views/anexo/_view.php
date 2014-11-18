@@ -16,10 +16,14 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ruta')); ?>:</b>
 	<?php echo CHtml::encode($data->ruta); ?>
 	<br />
-<!--
-	<b><?php echo CHtml::encode($data->getAttributeLabel('convocatoria_fk')); ?>:</b>
-	<?php echo CHtml::encode($data->convocatoria_fk); ?>
-	<br />-->
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('convoctoria')); ?>:</b>
+	<?php echo CHtml::encode($data->convoctoria); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('fecha')); ?>:</b>
+	<?php echo CHtml::encode($data->fecha); ?>
+	<br />
 
 
 </div>
