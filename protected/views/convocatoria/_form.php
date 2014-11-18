@@ -438,13 +438,13 @@
 	</div>
 
 	<div class="row buttons">
-		<div class="col-lg-4">
+		<div class="col-lg-2 " style="">
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Cancelar' : 'Save'); ?>
 		</div>
-		<div class="col-lg-4">
-			<button style="margin-left: 159px; margin-top: 3px;"><a href="../anexo/admin">Anexos</a></button>
+		<div class="col-lg-2">
+			<button style="margin-top: 3px;"><a href="../anexo/admin">Anexos</a></button>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-2">
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar cambios' : 'Save'); ?>
 		</div>
 	</div>
