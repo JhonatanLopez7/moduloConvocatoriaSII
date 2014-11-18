@@ -4,15 +4,33 @@
 
 $this->breadcrumbs=array(
 	'Anexos'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Anexo', 'url'=>array('index')),
-	array('label'=>'Manage Anexo', 'url'=>array('admin')),
+	array('label'=>'Listar Anexos', 'url'=>array('index')),
+	array('label'=>'Administrar Anexo', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Anexo</h1>
+<div class="TituloCrear">
+	<div class="Texto">
+		<h2 class="Titulo">Crear convocatoria</h2>
+	</div>
+	
+</div>
+
+<style>
+	.TituloCrear{
+		/*background: #69A8CD; color original*/
+		background: #669999;
+			}
+	.Texto{
+		margin-left: 230px;
+	}
+	.Titulo{
+		color: #FFFFFF;
+	}
+</style>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -14,7 +14,7 @@ $this->menu=array(
 ?>
 <div class="TituloCrear">
 	<div class="Texto">
-		<h1 class="Titulo">Crear Convocatorias</h1>
+		<h1 class="Titulo">Crear Convocatoria</h1>
 	</div>
 	
 </div>

@@ -5,17 +5,17 @@
 $this->breadcrumbs=array(
 	'Anexos'=>array('index'),
 	$model->codigo=>array('view','id'=>$model->codigo),
-	'Update',
+	'Modificar',
 );
 
 $this->menu=array(
-	array('label'=>'List Anexo', 'url'=>array('index')),
-	array('label'=>'Create Anexo', 'url'=>array('create')),
-	array('label'=>'View Anexo', 'url'=>array('view', 'id'=>$model->codigo)),
-	array('label'=>'Manage Anexo', 'url'=>array('admin')),
+	array('label'=>'Listar Anexos', 'url'=>array('index')),
+	array('label'=>'Crear Anexo', 'url'=>array('create')),
+	array('label'=>'Ver Anexo', 'url'=>array('view', 'id'=>$model->codigo)),
+	array('label'=>'Administrar Anexos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Anexo <?php echo $model->codigo; ?></h1>
+<h1>Modificar Anexo <?php echo $model->codigo; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

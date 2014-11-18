@@ -15,7 +15,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+    <!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -33,13 +33,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'ruta'); ?>
+		<?php echo $form->labelEx($model,'Anexo'); ?>
 		<?php echo CHtml::activeFileField($model,'ruta',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'ruta'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
