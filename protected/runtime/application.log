@@ -4320,6 +4320,7 @@ Stack trace:
 REQUEST_URI=/yii/moduloConvocatoriaSII/convocatoria/create.html
 HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/convocatoria/admin.html
 ---
+<<<<<<< HEAD
 2014/11/18 00:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "anexo".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
 Stack trace:
 #0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('anexo')
@@ -4329,4 +4330,1313 @@ Stack trace:
 #4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
 #5 {main}
 REQUEST_URI=/yii/moduloConvocatoriaSII/convocatoria/anexo
+=======
+2014/11/18 00:22:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Anexo))
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(65): CActiveRecord->__construct()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 00:24:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Anexo))
+#7 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(65): CActiveRecord->__construct()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/admin
+---
+2014/11/18 01:26:26 [error] [exception.CException] exception 'CException' with message 'Property "Anexo.convocatoria" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('convocatoria')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('convocatoria')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Anexo), 'convocatoria')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Anexo), 'convocatoria', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Anexo), 'convocatoria', Array)
+#5 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(42): CActiveForm->textField(Object(Anexo), 'convocatoria')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(37): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): CController->render('create', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/admin
+---
+2014/11/18 01:26:38 [error] [exception.CException] exception 'CException' with message 'Property "Anexo.convocatoria" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('convocatoria')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('convocatoria')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Anexo), 'convocatoria')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Anexo), 'convocatoria', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Anexo), 'convocatoria', Array)
+#5 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(42): CActiveForm->textField(Object(Anexo), 'convocatoria')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(37): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): CController->render('create', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/admin
+---
+2014/11/18 01:49:00 [error] [exception.CException] exception 'CException' with message 'Property "AnexoController.fecha" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(43): CComponent->__get('fecha')
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): CController->renderPartial('_form', Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): CController->render('create', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/admin
+---
+2014/11/18 01:49:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 01:49:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 00:56:25 [error] [php] Undefined variable: fecha (C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#1 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#6 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (44)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/18 02:00:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:00:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:01:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:01:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:01:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:01:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:01:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:01:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:02:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:02:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:03:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:03:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:04:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:04:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:04:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:04:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 01:07:20 [error] [php] Illegal string offset 'name' (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2458)
+Stack trace:
+#0 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(45): CActiveForm->textField()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (45)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/18 01:12:42 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.2014-11-18" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(44): CComponent->__get('2014-11-18')
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): CController->renderPartial('_form', Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): CController->render('create', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/1.html
+---
+2014/11/18 01:13:00 [error] [php] Object of class AnexoController could not be converted to string (C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#1 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#6 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (44)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/17 20:14:54 [error] [php] Illegal string offset 'name' (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2458)
+Stack trace:
+#0 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(45): CActiveForm->textField()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (45)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/17 20:15:16 [error] [php] Illegal string offset 'name' (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2458)
+Stack trace:
+#0 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(45): CActiveForm->textField()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (45)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/18 02:22:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha_resultado_preliminar' at row 1. The SQL statement executed was: INSERT INTO `convocatoria` (`tipo_convocatoria`, `subtipo_convocatoria`, `convocatoria_programa`, `tipo_financiacion`, `fecha_apertura`, `fecha_cierre`, `fecha_resultado_preliminar`, `fecha_resultado_definitivo`, `convocatoria`, `codigo_convocatoria`, `descripcion`, `objeto`, `dirigido_a`, `programa_base`, `instituciones_financiadoras`, `maximo_porcentaje_financiar`, `minimo_porcentaje_financiar`, `minimo_porcentaje_contrapartida_dinero`, `minimo_porcentaje_contrapartida_especie`, `monto_maximo_financiar`, `numero_maximo_meses_proyecto`, `monto_total_convocatoria`, `convenio`, `cdp`, `fecha_cdp`, `cdr`, `fecha_cdr`, `url`, `linea_investigacion`, `postulacion_anticipada`, `definir_estructura_convocatoria`, `numero_proyecto_inversion`, `vigencia`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\ConvocatoriaController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:22:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'fecha_resultado_preliminar' at row 1. The SQL statement executed was: INSERT INTO `convocatoria` (`tipo_convocatoria`, `subtipo_convocatoria`, `convocatoria_programa`, `tipo_financiacion`, `fecha_apertura`, `fecha_cierre`, `fecha_resultado_preliminar`, `fecha_resultado_definitivo`, `convocatoria`, `codigo_convocatoria`, `descripcion`, `objeto`, `dirigido_a`, `programa_base`, `instituciones_financiadoras`, `maximo_porcentaje_financiar`, `minimo_porcentaje_financiar`, `minimo_porcentaje_contrapartida_dinero`, `minimo_porcentaje_contrapartida_especie`, `monto_maximo_financiar`, `numero_maximo_meses_proyecto`, `monto_total_convocatoria`, `convenio`, `cdp`, `fecha_cdp`, `cdr`, `fecha_cdr`, `url`, `linea_investigacion`, `postulacion_anticipada`, `definir_estructura_convocatoria`, `numero_proyecto_inversion`, `vigencia`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\ConvocatoriaController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ConvocatoriaController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('convocatoria/cr...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/convocatoria/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/convocatoria/create.html
+---
+2014/11/18 02:24:22 [error] [php] Missing argument 3 for CHtml::listData(), called in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php on line 36 and defined (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2073)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#7 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (36)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/18 02:30:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:30:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:30:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 02:30:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 02:37:01 [error] [php] Missing argument 2 for CHtml::listData(), called in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php on line 42 and defined (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2073)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#7 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (42)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/18 02:54:47 [error] [php] Missing argument 2 for CHtml::listData(), called in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php on line 42 and defined (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2073)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#7 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (42)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/18 02:59:58 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2078)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#7 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(79): AnexoController->render()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (42)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (79)
+2014/11/18 03:04:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:04:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:05:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:05:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:06:04 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:06:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:06:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:06:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:09:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:09:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:12:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:12:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:12:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:12:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:13:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:13:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `convoctoria`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:13:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:13:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:13:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:13:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:13:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:13:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:14:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:14:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:15:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:15:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:16:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:16:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:17:04 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:17:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'empty' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/18 03:17:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (73)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php (13)
+2014/11/18 03:17:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: 'fecha' for column 'fecha' at row 1. The SQL statement executed was: INSERT INTO `anexo` (`nombre`, `ruta`, `fecha`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/create.html
+---
+2014/11/17 21:23:18 [error] [php] Illegal string offset 'for' (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:567)
+Stack trace:
+#0 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(46): CActiveForm->label()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(82): AnexoController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (46)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (82)
+2014/11/17 21:23:31 [error] [php] Illegal string offset 'name' (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2458)
+Stack trace:
+#0 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(46): CActiveForm->textField()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(82): AnexoController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (46)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (82)
+2014/11/17 21:23:37 [error] [php] Illegal string offset 'name' (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2458)
+Stack trace:
+#0 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(46): CActiveForm->textField()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): AnexoController->renderPartial()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AnexoController->renderInternal()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): AnexoController->renderFile()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): AnexoController->renderPartial()
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(82): AnexoController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AnexoController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AnexoController->filterAccessControl()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): AnexoController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AnexoController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php (46)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php (18)
+in C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php (82)
+2014/11/17 21:24:20 [error] [exception.CException] exception 'CException' with message 'Property "Anexo.2014/11/17" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('2014/11/17')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('2014/11/17')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Anexo), '2014/11/17')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Anexo), '2014/11/17', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Anexo), '2014/11/17', Array)
+#5 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(46): CActiveForm->textField(Object(Anexo), '2014/11/17')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(82): CController->render('create', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AnexoController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/create')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/create.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/2.html
+---
+2014/11/17 21:39:33 [error] [exception.CException] exception 'CException' with message 'Property "Anexo.2014/11/17" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('2014/11/17')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('2014/11/17')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Anexo), '2014/11/17')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Anexo), '2014/11/17', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Anexo), '2014/11/17', Array)
+#5 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\_form.php(46): CActiveForm->textField(Object(Anexo), '2014/11/17')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\views\anexo\update.php(21): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#14 C:\xampp\htdocs\yii\moduloConvocatoriaSII\protected\controllers\AnexoController.php(106): CController->render('update', Array)
+#15 [internal function]: AnexoController->actionUpdate('1')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AnexoController), Array)
+#17 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AnexoController), Object(ReflectionMethod), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/update')
+#28 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/update/1.html
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/admin.html
+---
+2014/11/18 03:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/images/lo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/images/logo.png
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/update/1.html
+---
+2014/11/18 03:44:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('anexo/images/lo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\moduloConvocatoriaSII\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/moduloConvocatoriaSII/anexo/images/logo.png
+HTTP_REFERER=http://localhost/yii/moduloConvocatoriaSII/anexo/update/1.html
+>>>>>>> origin/master
 ---

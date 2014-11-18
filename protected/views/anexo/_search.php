@@ -27,8 +27,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'convocatoria_fk'); ?>
-		<?php echo $form->textField($model,'convocatoria_fk'); ?>
+		<?php echo $form->label($model,'convoctoria'); ?>
+		<?php echo $form->textField($model,'convoctoria'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'fecha'); ?>
+		<?php echo $form->textField($model,'fecha'); ?>
 	</div>
 
 	<div class="row buttons">

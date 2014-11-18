@@ -14,15 +14,16 @@
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
-	<h3>Anexos</h3>
-	<p class="note">Los campos con <span class="required">*</span> son obligatorios.</p>
+
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'codigo'); ?>
-		<?php echo $form->textField($model,'codigo'); ?>
-		<?php echo $form->error($model,'codigo'); ?>
+		<?php echo $form->labelEx($model,'convoctoria'); ?>
+		<?php $datos = CHtml::listData(Convocatoria::model()->findAll(),'codigo_convocatoria','convocatoria');
+		echo $form->DropDownList($model,'convoctoria', $datos , array('empty'=>'--Seleccione una opcion--')); ?>
+		<?php echo $form->error($model,'convoctoria'); ?>
 	</div>
 
 	<div class="row">
@@ -37,14 +38,8 @@
 		<?php echo $form->error($model,'ruta'); ?>
 	</div>
 
-	<!--<div class="row">
-		<?php echo $form->labelEx($model,'convocatoria_fk'); ?>
-		<?php echo $form->textField($model,'convocatoria_fk'); ?>
-		<?php echo $form->error($model,'convocatoria_fk'); ?>
-	</div>-->
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

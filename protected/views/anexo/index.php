@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Crear Anexo', 'url'=>array('create')),
-	array('label'=>'Administrar Anexos', 'url'=>array('admin')),
+	array('label'=>'Create Anexo', 'url'=>array('create')),
+	array('label'=>'Manage Anexo', 'url'=>array('admin')),
 );
 ?>
 
