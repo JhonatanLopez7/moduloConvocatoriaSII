@@ -47,7 +47,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Convocatorias/Servicios', 'url'=>array('/convocatoria/admin')),
-				array('label'=>'Gestión de Convocatorias Servicios / Parametrizar', 'url'=>array('/convocatoria/admin')),
+				array('label'=>'Gestión de Convocatorias Servicios / Parametrizar', 'url'=>array('/convocatoria/admin2')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
