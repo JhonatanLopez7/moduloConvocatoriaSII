@@ -36,7 +36,7 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<?php echo $form->labelEx($model,'estado'); ?>
-			<?php echo $form->DropDownList($model,'estado',array('empty'=>'Seleccione','true'=>'Habilitado','false'=>'Deshabilitado'),array('style'=>'border-radius: 7px; width: 175px')); ?>
+			<?php echo $form->DropDownList($model,'estado',array('empty'=>'Seleccione','Habilitado'=>'Habilitado','Deshabilitado'=>'Deshabilitado'),array('style'=>'border-radius: 7px; width: 175px')); ?>
 			<?php echo $form->error($model,'estado'); ?>
 		</div>
 	</div>

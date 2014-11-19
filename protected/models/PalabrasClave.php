@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table 'palabras_clave':
  * @property integer $codigo
- * @property integer $estado
+ * @property string $estado
  * @property integer $cantidad
  * @property integer $convocatoria_fk
  *
@@ -30,7 +30,8 @@ class PalabrasClave extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('estado, cantidad, convocatoria_fk', 'numerical', 'integerOnly'=>true),
+			array('cantidad, convocatoria_fk', 'numerical', 'integerOnly'=>true),
+			array('estado', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('codigo, estado, cantidad, convocatoria_fk', 'safe', 'on'=>'search'),
@@ -81,7 +82,7 @@ class PalabrasClave extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('codigo',$this->codigo);
-		$criteria->compare('estado',$this->estado);
+		$criteria->compare('estado',$this->estado,true);
 		$criteria->compare('cantidad',$this->cantidad);
 		$criteria->compare('convocatoria_fk',$this->convocatoria_fk);
 
