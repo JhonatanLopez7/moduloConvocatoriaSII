@@ -14,31 +14,45 @@
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	
+	<div class="row">
+		<div class="col-lg-12">
+			<p>En este espacio diligencie los campos requeridos. Los datos marcados con <span class="required">*</span> son obligatorios, cuando termine de click en aceptar.</p>
+		</div>
+	</div>	
+	<!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model,'estado'); ?>
-		<?php echo $form->error($model,'estado'); ?>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'convocatoria_fk'); ?>
+			<?php $datos2 = CHtml::listData(Convocatoria::model()->findAll(),'codigo_convocatoria','convocatoria');
+			 echo $form->DropDownList($model, 'convocatoria_fk', $datos2, array('empty'=>'Seleccione','style'=>'border-radius: 7px; width: 175px')); ?>
+			<?php echo $form->error($model,'convocatoria_fk'); ?>
+		</div>		
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'cantidad'); ?>
-		<?php echo $form->textField($model,'cantidad'); ?>
-		<?php echo $form->error($model,'cantidad'); ?>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'estado'); ?>
+			<?php echo $form->DropDownList($model,'estado',array('empty'=>'Seleccione','true'=>'Habilitado','false'=>'Deshabilitado'),array('style'=>'border-radius: 7px; width: 175px')); ?>
+			<?php echo $form->error($model,'estado'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'convocatoria_fk'); ?>
-		<?php echo $form->textField($model,'convocatoria_fk'); ?>
-		<?php echo $form->error($model,'convocatoria_fk'); ?>
+		<div class="col-lg-4">
+			<?php echo $form->labelEx($model,'cantidad'); ?>
+			<?php echo $form->textField($model,'cantidad',array('style'=>'border-radius: 7px; width: 175px')); ?>
+			<?php echo $form->error($model,'cantidad'); ?>
+		</div>	
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<div class="col-lg-4">
+			<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		</div>
 	</div>
 
 <?php $this->endWidget(); ?>

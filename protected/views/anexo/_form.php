@@ -18,28 +18,37 @@
     <!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
 
 	<?php echo $form->errorSummary($model); ?>
+	<br>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'convoctoria'); ?>
-		<?php $datos = CHtml::listData(Convocatoria::model()->findAll(),'codigo_convocatoria','convocatoria');
-		echo $form->DropDownList($model,'convoctoria', $datos , array('empty'=>'--Seleccione una opcion--')); ?>
-		<?php echo $form->error($model,'convoctoria'); ?>
+		<div class="col-lg-8">
+			<?php echo $form->labelEx($model,'convoctoria'); ?>
+			<?php $datos = CHtml::listData(Convocatoria::model()->findAll(),'codigo_convocatoria','convocatoria');
+			echo $form->DropDownList($model,'convoctoria', $datos , array('empty'=>'Seleccione','style'=>'border-radius: 7px; width: 175px')); ?>
+			<?php echo $form->error($model,'convoctoria'); ?>
+		</div>	
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'nombre'); ?>
+		<div class="col-lg-5">
+			<?php echo $form->labelEx($model,'Nombre del anexo'); ?>
+			<?php echo $form->textField($model,'nombre',array('style'=>'border-radius: 7px; width: 175px;','size'=>60,'maxlength'=>100)); ?>
+			<?php echo $form->error($model,'nombre'); ?>
+		</div>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Anexo'); ?>
-		<?php echo CHtml::activeFileField($model,'ruta',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'ruta'); ?>
+		<div class="col-lg-5">
+			<?php echo $form->labelEx($model,'Anexo'); ?>
+			<?php echo CHtml::activeFileField($model,'ruta',array('style'=>'border-radius: 7px;','size'=>60,'maxlength'=>200)); ?>
+			<?php echo $form->error($model,'ruta'); ?>
+		</div>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
+		<div class="col-lg-5">
+			<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
+		</div>	
 	</div>
 
 <?php $this->endWidget(); ?>
