@@ -5,7 +5,7 @@
 		<?php echo $content; ?>
 	</div><!-- content -->
 </div>
-<div class="span-5 last operations">
+<div class="span-5 last" style="margin-left: 20px; ">
 	<div id="sidebar">
 	<?php
 		$this->beginWidget('zii.widgets.CPortlet', array(
