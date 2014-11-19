@@ -26,7 +26,7 @@
 
 	<div class="row">
 		<div class="col-lg-4">
-			<?php echo $form->labelEx($model,'convocatoria_fk'); ?>
+			<?php echo $form->labelEx($model,'convocatoria'); ?>
 			<?php $datos2 = CHtml::listData(Convocatoria::model()->findAll(),'codigo_convocatoria','convocatoria');
 			 echo $form->DropDownList($model, 'convocatoria_fk', $datos2, array('empty'=>'Seleccione','style'=>'border-radius: 7px; width: 175px')); ?>
 			<?php echo $form->error($model,'convocatoria_fk'); ?>

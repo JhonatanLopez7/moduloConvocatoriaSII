@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Palabras Claves'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List PalabrasClave', 'url'=>array('index')),
-	array('label'=>'Manage PalabrasClave', 'url'=>array('admin')),
+	array('label'=>'Listar Palabras Clave', 'url'=>array('index')),
+	array('label'=>'Administrar Palabras Clave', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create PalabrasClave</h1>
+<h1>Crear Palabras Clave</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

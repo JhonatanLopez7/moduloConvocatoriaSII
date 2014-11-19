@@ -1,18 +1,18 @@
 <?php
-/* @var $this PalabrasClaveController */
+/* @var $this RubroController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Palabras Claves',
+	'Rubros',
 );
 
 $this->menu=array(
-	array('label'=>'Crear Palabras Clave', 'url'=>array('create')),
-	array('label'=>'Adminstrar Palabras Clave', 'url'=>array('admin')),
+	array('label'=>'Crear Rubro', 'url'=>array('create')),
+	array('label'=>'Administrar Rubro', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Palabras Claves</h1>
+<h1>Rubros</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
