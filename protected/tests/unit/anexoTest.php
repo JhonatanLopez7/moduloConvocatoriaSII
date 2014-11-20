@@ -1,7 +1,7 @@
 <?php
 class anexoTest extends PHPUnit_Framework_TestCase{
 	
-	public function createTest(){
+	public function testCreate(){
 		$anexo=new Anexo();
 		$anexo->convocatoria=1;
 		$anexo->nombre='convocatoria';
@@ -9,7 +9,7 @@ class anexoTest extends PHPUnit_Framework_TestCase{
 		$anexo->fecha='2014-11-19';
 		$this->assertTrue($anexo->save());
 	}
-	public function createBuscar(){
+	public function testBuscar(){
 		$anexo=new Anexo();
 		$anexo->convocatoria=1;
 		$anexo->nombre='convocatoria';
@@ -17,7 +17,7 @@ class anexoTest extends PHPUnit_Framework_TestCase{
 		$anexo->fecha='2014-11-19';
 		$this->assertTrue($anexo->save());
 	}
-	public function createUpdate(){
+	public function testUpdate(){
 		$anexo=new Anexo();
 		$anexo->convocatoria=1;
 		$anexo->nombre='convocatoria';
@@ -25,7 +25,7 @@ class anexoTest extends PHPUnit_Framework_TestCase{
 		$anexo->fecha='2014-11-19';
 		$this->assertTrue($anexo->save());
 	}
-	public function createDelete(){
+	public function testDelete(){
 		$anexo=new Anexo();
 		$anexo->convocatoria=1;
 		$anexo->nombre='convocatoria';
