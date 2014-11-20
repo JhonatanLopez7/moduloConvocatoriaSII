@@ -1,5 +1,5 @@
 <?php
-class anexoTest extends PHPUnit_Framework_TestCase{
+class rubroTest extends PHPUnit_Framework_TestCase{
 	
 	public function testCreate(){
 		$rubro=new Rubro();

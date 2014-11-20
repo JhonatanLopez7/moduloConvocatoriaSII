@@ -78,7 +78,7 @@ class convocatoriaTest extends PHPUnit_Framework_TestCase{
 		$convocatoria->vigencia=1;
 
 		$aux=$convocatoria->save();
-		$aux2=$convocatoria->findByPk(1095);
+		$aux2=$convocatoria->findByPk(123);
 	 	$this->assertNotNull($aux2);
 	 	$convocatoria->delete();
 	}
@@ -119,7 +119,7 @@ class convocatoriaTest extends PHPUnit_Framework_TestCase{
 		$convocatoria->vigencia=1;
 
 		$aux=$convocatoria->save();
-		$aux2=$convocatoria->findByPk(1095);
+		$aux2=$convocatoria->findByPk(188);
 		$aux2->convenio='Empresarial';
 	 	$this->assertNotNull($aux2);
 	 	$convocatoria->delete();
