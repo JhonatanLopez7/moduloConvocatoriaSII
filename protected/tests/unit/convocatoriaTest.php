@@ -1,5 +1,5 @@
 <?php
-//require_once(dirname(__FILE__).'/../../models/Convocatoria.php');
+require_once(dirname(__FILE__).'/../../models/Convocatoria.php');
 
 class convocatoriaTest extends PHPUnit_Framework_TestCase{
 
