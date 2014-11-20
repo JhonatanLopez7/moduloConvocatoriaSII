@@ -37,10 +37,8 @@ class convocatoriaTest extends PHPUnit_Framework_TestCase{
 		$convocatoria->definir_estructura_convocatoria='Plantilla1';
 		$convocatoria->numero_proyecto_inversion=1;
 		$convocatoria->vigencia=1;
-		$aux=$convocatoria->save();
-		$aux2=$convocatoria->findByPk(1);
-		assertTrue($aux==$aux2);
-	 	$this->assertNotNull($aux2);
+
+		$this->assertTrue($convocatoria->save());
 	 	$convocatoria->delete();
 	}
 
@@ -78,9 +76,9 @@ class convocatoriaTest extends PHPUnit_Framework_TestCase{
 		$convocatoria->definir_estructura_convocatoria='Plantilla1';
 		$convocatoria->numero_proyecto_inversion=1;
 		$convocatoria->vigencia=1;
+
 		$aux=$convocatoria->save();
-		$aux2=$convocatoria->findByPk(1);
-		assertTrue($aux==$aux2);
+		$aux2=$convocatoria->findByPk(1095);
 	 	$this->assertNotNull($aux2);
 	 	$convocatoria->delete();
 	}
@@ -119,9 +117,10 @@ class convocatoriaTest extends PHPUnit_Framework_TestCase{
 		$convocatoria->definir_estructura_convocatoria='Plantilla1';
 		$convocatoria->numero_proyecto_inversion=1;
 		$convocatoria->vigencia=1;
+
 		$aux=$convocatoria->save();
-		$aux2=$convocatoria->findByPk(1);
-		assertTrue($aux==$aux2);
+		$aux2=$convocatoria->findByPk(1095);
+		$aux2->convenio='Empresarial';
 	 	$this->assertNotNull($aux2);
 	 	$convocatoria->delete();
 	}
@@ -160,11 +159,9 @@ class convocatoriaTest extends PHPUnit_Framework_TestCase{
 		$convocatoria->definir_estructura_convocatoria='Plantilla1';
 		$convocatoria->numero_proyecto_inversion=1;
 		$convocatoria->vigencia=1;
-		$aux=$convocatoria->save();
-		$aux2=$convocatoria->findByPk(1);
-		assertTrue($aux==$aux2);
-	 	$this->assertNotNull($aux2);
-	 	$convocatoria->delete();
+
+		$this->assertTrue($convocatoria->save());
+	 	$this->assertTrue($convocatoria->delete());
 	}
 }
 ?>
